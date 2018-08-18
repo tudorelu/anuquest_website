@@ -1,0 +1,26 @@
+* {
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+}
+
+.navbar-nav a{
+    margin: 0 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.navbar-nav a:hover{
+    color: orange !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: red !important;
+    text-shadow: 2px 2px 5px black;
+}
+
+.navbar-brand{
+    color: red !important;
+    text-shadow: 2px 2px 5px black;
+}
