@@ -29,14 +29,14 @@ https://daneden.github.io/animate.css/
   <link href="./Resources/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="./Resources/Formstone/dist/css/background.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
-  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="./Resources/animate.css">
   <link href="anuQuest.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="frontBackground" id="home">
+    <!-- Fix nav for ipad size the layout and spacing are tiny bit off and unaligned -->
     <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,13 +72,28 @@ https://daneden.github.io/animate.css/
         <video class="gameVideo" id="frontVideo" controls autoplay loop muted poster="../../images/lake.jpg" preload="auto">
           <source src="../../images/ANUQuestGameplay.mp4" type="video/mp4"> Your browser does not support the video tag.
           </video>
-            <a id='downBtn' href="#aboutUs"><i class="fas fa-arrow-circle-down readMore wow zoomInDown" ><p>Read More Below</p></i></a>
-        </div>
+          <!-- Fix size for smaller screens like the iphone 5 and smaller, the word below is going off screen -->
+        <a id='downBtn' href="#aboutUs"><i class="fas fa-arrow-circle-down readMore wow zoomInDown" ><p>Read More Below</p></i></a>
+      </div>
     </section>
 
+    <!-- Need t fix the spacing for smaller screen sizes, there is way too much tab space in small screens -->
+    <!-- Make the font size smaller for small screens -->
     <section class="row aboutUs-section" id="aboutUs">
       <h1>About Us</h1>
-      <p>Description about what the company does and what the project is about.</p>
+      <br>
+      <h2>ARVentures</h2>
+      <p>ARVentures is a Canberra-based software design & development company specializing in custom software solutions, mobile apps, games and web development (e-commerce, data visualisation, management and planning, etc).
+        We have helped our clients deliver projects with classic and emerging technologies such as Blockchain, AR/VR, location-based, data analytics and machine learning.
+      </p>
+      <br>
+      <h2>ANUQuest</h2>
+      <p>
+        anuQuest is a GPS-based orientation app that allows perople to discover a new place fast, in a gamified fashion, it does this by using quests and custom tours. While playing the game the user can gain discounts from the businesses around that location.
+        Be it an unversity Campus, a part of a city or amid-large sized outdoor facility, this application allows all your visitors to quickly find out about the important places that they need to know. Currenlty we are developing this as an app aiding
+        new students to find all the important places they could use around the campus. The game also gives them access to deals for the businesses operating in the area. The university is able to tailor the kiind of tasks and quests the students engage
+        with and then analyse how the campus is being used in order to aid them with their decision making regarding the campus.
+      </p>
     </section>
 
     <section class="row">
@@ -103,20 +118,20 @@ https://daneden.github.io/animate.css/
         <p>Feature Description</p>
       </div>
       <div class="feature-element col-sm-4 wow fadeInLeftBig">
-          <img src="../../images/backpack.png">
-          <h2>Feature heading</h2>
-          <p>Feature Description</p>
-        </div>
-        <div class="feature-element col-sm-4 wow fadeInUpBig">
-            <img src="../../images/backpack.png">
-            <h2>Feature heading</h2>
-            <p>Feature Description</p>
-          </div>
-          <div class="feature-element col-sm-4 wow fadeInRightBig">
-              <img src="../../images/backpack.png">
-              <h2>Feature heading</h2>
-              <p>Feature Description</p>
-            </div>
+        <img src="../../images/backpack.png">
+        <h2>Feature heading</h2>
+        <p>Feature Description</p>
+      </div>
+      <div class="feature-element col-sm-4 wow fadeInUpBig">
+        <img src="../../images/backpack.png">
+        <h2>Feature heading</h2>
+        <p>Feature Description</p>
+      </div>
+      <div class="feature-element col-sm-4 wow fadeInRightBig">
+        <img src="../../images/backpack.png">
+        <h2>Feature heading</h2>
+        <p>Feature Description</p>
+      </div>
     </section>
 
     <section class="row">
@@ -126,14 +141,17 @@ https://daneden.github.io/animate.css/
 
     <section class="row contactUs-section" id="contactUs">
       <h1 class="wow bounce">Contact Us</h1>
-      <h3>Name</h3>
-      <h3>Email</h3>
+      <h3>Name     :   <span>Tudor Barbulescu<span></h3>
+      <!-- Need to add mailto for the email -->
+      <h3>Email    :   <a href="tudor.barbu7@gmail.com" target="_blank">tudor.barbu7@gmail.com</a></h3>
+      <!-- Need to fix size for smaller screens to match the rest of the cotact info  -->
+      <h3>LinkedIn :   <a href="https://www.linkedin.com/in/tudor-barbulescu" target="_blank">www.linkedin.com/in/tudor-barbulescu</a></h3>
       <h3>Phone</h3>
     </section>
   </div>
 
   <footer class="container-fluid">
-    <h1>Footer</h1>
+
   </footer>
 
   <!-- Links to SCRIPTS -->

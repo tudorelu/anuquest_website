@@ -64,18 +64,18 @@ html, body{
   position: absolute;
   top: 80% !important;
   left: 50% !important;
-  text-align:center; 
-  font-size: 5em; 
+  text-align:center;
+  font-size: 5em;
   color: black;
   text-shadow: 1px 1px 10px black;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%,-50%);  
+  -webkit-transform: translate(-50%,-50%);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .readMore p{
-  font-size: 50%; 
+  font-size: 50%;
 }
 
 .readMore:hover{
@@ -91,9 +91,11 @@ html, body{
 
 
 .aboutUs-section{
+  padding: 20px 50px;
   text-align: center;
   color: white;
-  background-image: linear-gradient(to bottom, #DDD, #AAA);
+  /* background-image: linear-gradient(to bottom, #DDD, #AAA); */
+    background-image: linear-gradient(to bottom, #7F7, #595);
 }
 
 .aboutUs-section h1 {
@@ -101,14 +103,23 @@ html, body{
   text-shadow: 1px 1px 5px black;
 }
 
+.aboutUs-section h2 {
+  text-align: justify;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 5px black;
+}
+
 .aboutUs-section p {
-  font-size: 1.5em;
+  text-align: justify;
+  font-size: 1.75em;
+  color: black;
 }
 
 .features-section{
   padding: 50px;
   color: white;
-  background-image: linear-gradient(to bottom, #DDD, #AAA);
+  /* background-image: linear-gradient(to bottom, #DDD, #AAA); */
+    background-image: linear-gradient(to bottom, #add8e6, #22A);
 }
 
 .feature-element {
@@ -120,7 +131,7 @@ html, body{
 }
 
 .feature-element p {
-  font-size: 1.15em;
+  font-size: 1.25em;
 }
 
 .feature-element img{
@@ -128,14 +139,26 @@ html, body{
   height: 200px;
 }
 
-.contactUs-section{  
+.contactUs-section{
   color: white;
   background-image: linear-gradient(to bottom, #CCC, #333);
   text-align: center;
 }
 
-.contactUs-section h1{  
+.contactUs-section h1{
   font-size: 3.5em;
+  text-shadow: 1px 1px 5px black;
+}
+
+.contactUs-section span{
+  font-size: 1.0em;
+  color: lightblue;
+  text-shadow: 1px 1px 5px black;
+}
+
+.contactUs-section a{
+  font-size: 1.0em;
+  color: lightblue;
   text-shadow: 1px 1px 5px black;
 }
 
@@ -153,4 +176,3 @@ footer {
   text-align: center;
   text-shadow: 1px 1px 5px black;
 }
-
