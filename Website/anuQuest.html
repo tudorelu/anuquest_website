@@ -4,45 +4,56 @@ Main HTML code for ANUQuest website
 <!-- USEFUL DOCUMENTATION
 https://getbootstrap.com/docs/
 https://github.com/codrops/AnimatedHeader
+https://fontawesome.com/icons?d=gallery
 
 Will need to check for commercial use
 https://formstone.it/components/background/
 
 For adding a video of the game, might need to use this instead of the link above
 https://www.w3schools.com/tags/tag_video.asp
+
+For animations, need to check about commerical use
+https://mynameismatthieu.com/WOW
+to use just add the class wow to the element you want to animate
+
+For list of animations
+https://daneden.github.io/animate.css/
 -->
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>ANUQuest</title>
+  <title>ARVentures</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!-- Links of resources -->
   <link href="./Resources/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="./Resources/Formstone/dist/css/background.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Resources/animate.css">
   <link href="anuQuest.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="frontBackground">
+  <header class="frontBackground" id="home">
     <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-          <a class="navbar-brand" href="#">ANUQuest</a>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home">ARVentures</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
+            <li id="homeTab"><a href="#home">Home</a></li>
             <li><a href="#aboutUs">About Us</a></li>
             <li><a href="#keyFeatures">Key Features</a></li>
             <li><a href="#contactUs">Contact Us</a></li>
@@ -54,30 +65,71 @@ https://www.w3schools.com/tags/tag_video.asp
     </nav>
   </header>
   <div class="container-fluid">
-    <div class="row">
-      <!-- <div class="fill-screen" style="background-image: url(../../images/lake.jpg)"> -->
-      <div class="fill-screen">
-        <!-- In order to autoplay the video it must be muted otherwise chrome will not autoplay it-->
-        <video id="frontVideo" width="100%" height="100%" controls autoplay loop poster="../../images/lake.jpg" preload="auto">
-        <source src="../../images/bikes.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-    <div class="row content-filler">
-    </div>
-    <div class="row">
+    <section id="top" class="row fill-screen">
+      <!-- In order to autoplay the video it must be muted otherwise chrome will not autoplay it-->
+      <!-- Will need to add multiple formats for the video as well.-->
+      <div style="position:relative">
+        <video class="gameVideo" id="frontVideo" controls autoplay loop muted poster="../../images/lake.jpg" preload="auto">
+          <source src="../../images/ANUQuestGameplay.mp4" type="video/mp4"> Your browser does not support the video tag.
+          </video>
+            <a id='downBtn' href="#aboutUs"><i class="fas fa-arrow-circle-down readMore wow zoomInDown" ><p>Read More Below</p></i></a>
+        </div>
+    </section>
+
+    <section class="row aboutUs-section" id="aboutUs">
+      <h1>About Us</h1>
+      <p>Description about what the company does and what the project is about.</p>
+    </section>
+
+    <section class="row">
       <div class="fill-screen fixed-image" style="background-image: url(../../images/elk.jpg)">
       </div>
-    </div>
-    <div class="row content-filler">
-    </div>
-    <div class="row">
+    </section>
+
+    <section class="row features-section" id="keyFeatures">
+      <div class="feature-element col-sm-4 wow fadeInLeftBig">
+        <img src="../../images/map.png">
+        <h2>Feature heading</h2>
+        <p>Feature Description</p>
+      </div>
+      <div class="feature-element col-sm-4 wow fadeInDownBig">
+        <img src="../../images/pic.png">
+        <h2>Feature heading</h2>
+        <p>Feature Description</p>
+      </div>
+      <div class="feature-element col-sm-4 wow fadeInRightBig">
+        <img src="../../images/backpack.png">
+        <h2>Feature heading</h2>
+        <p>Feature Description</p>
+      </div>
+      <div class="feature-element col-sm-4 wow fadeInLeftBig">
+          <img src="../../images/backpack.png">
+          <h2>Feature heading</h2>
+          <p>Feature Description</p>
+        </div>
+        <div class="feature-element col-sm-4 wow fadeInUpBig">
+            <img src="../../images/backpack.png">
+            <h2>Feature heading</h2>
+            <p>Feature Description</p>
+          </div>
+          <div class="feature-element col-sm-4 wow fadeInRightBig">
+              <img src="../../images/backpack.png">
+              <h2>Feature heading</h2>
+              <p>Feature Description</p>
+            </div>
+    </section>
+
+    <section class="row">
       <div class="fill-screen fixed-image" style="background-image: url(../../images/snowboarder.jpg)">
       </div>
-    </div>
-    <div class="row content-filler">
-    </div>
+    </section>
+
+    <section class="row contactUs-section" id="contactUs">
+      <h1 class="wow bounce">Contact Us</h1>
+      <h3>Name</h3>
+      <h3>Email</h3>
+      <h3>Phone</h3>
+    </section>
   </div>
 
   <footer class="container-fluid">
@@ -92,6 +144,8 @@ https://www.w3schools.com/tags/tag_video.asp
   <script src="./Resources/Formstone/dist/js/core.js"></script>
   <script src="./Resources/Formstone/dist/js/transition.js"></script>
   <script src="./Resources/Formstone/dist/js/background.js"></script>
+  <script src="./Resources/jquery.easing.1.3.js"></script>
+  <script src="./Resources/WOW/dist/wow.min.js"></script>
   <script src="anuQuest.js"></script>
 
 </body>
