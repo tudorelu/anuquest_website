@@ -3,9 +3,9 @@ $(function () {
   $(window).on("load resize", function () {
     $(".fill-screen").css("height", window.innerHeight);
     //scales the video to take the whole window
-    $('.gameVideo').css('width', window.innerWidth);
-    $('.gameVideo').css('height', window.innerHeight - 50);
-    $('#top').css('height', window.innerHeight - 50);
+    $('.gameVideo').css('width', window.innerWidth-17);
+    $('.gameVideo').css('height', window.innerHeight - 40);
+    $('#top').css('height', window.innerHeight - 40);
     if ($('#homeTab').hasClass("active")){
       //unmute the video
       console.log("unmute video");
@@ -17,6 +17,11 @@ $(function () {
     var video = $("#frontVideo")[0];
     console.log("starting the video")
     video.play();
+
+    // var fillerHeight = $('#filler').parent().height();
+    $('.filler').css('min-height', '25%');
+    $('.fillerTwo').css('min-height', '15%');
+
   });
   // add Bootstrap's scrollspy
   $('body').scrollspy({

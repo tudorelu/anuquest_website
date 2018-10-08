@@ -1,6 +1,6 @@
 body {
     font-family: 'Lobster', cursive;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 html, body{
@@ -95,7 +95,7 @@ html, body{
   text-align: center;
   color: white;
   /* background-image: linear-gradient(to bottom, #DDD, #AAA); */
-    background-image: linear-gradient(to bottom, #7F7, #595);
+    background-image: linear-gradient(to bottom, rgba(119,255,119,.5), rgba(85,153,85,.5));
 }
 
 .aboutUs-section h1 {
@@ -116,10 +116,17 @@ html, body{
 }
 
 .features-section{
-  padding: 50px;
+  padding: 20px 50px;
   color: white;
   /* background-image: linear-gradient(to bottom, #DDD, #AAA); */
-    background-image: linear-gradient(to bottom, #add8e6, #22A);
+    /* background-image: linear-gradient(to bottom, rgba(173,216,230,.5), rgba(34,34,170,.5)); */
+    background-image: linear-gradient(to bottom, rgba(119,255,119,.5), rgba(85,153,85,.5));
+}
+
+.features-section h1 {
+  text-align: center;
+  font-size: 3.5em;
+  text-shadow: 1px 1px 5px black;
 }
 
 .feature-element {
@@ -131,12 +138,14 @@ html, body{
 }
 
 .feature-element p {
-  font-size: 1.25em;
+  color: black;
+  font-size: 1.45em;
 }
 
 .feature-element img{
   width: 200px;
   height: 200px;
+  box-shadow: 1px 1px 10px black;
 }
 
 .contactUs-section{
@@ -166,6 +175,14 @@ html, body{
 @media (max-width: 1024px) {
   .fixed-image{
     background-attachment: scroll;
+  }
+}
+
+@media (min-width: 1240px) {
+  .feature-element img{
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 1px 10px black;
   }
 }
 
